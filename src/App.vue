@@ -1,26 +1,27 @@
 <template>
-    <Game msg="Sinking ships" />
+    <Home />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Game from './components/Game.vue'
+import Home from './components/Home.vue'
 
 export default defineComponent({
     name: 'App',
     components: {
-        Game,
+        Home,
     },
 })
 </script>
 
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Papyrus, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
 }
+@import './assets/css/board.css';
 </style>

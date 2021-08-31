@@ -1,0 +1,16 @@
+.board-container_margin {
+    margin: 50px;
+}
+.board-table_border {
+    border: solid black;
+    border-width: 1px;
+}
+.board-table_td {
+    border: solid black;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+}
+.board-table_no-border {
+    border: 0px;
+}
