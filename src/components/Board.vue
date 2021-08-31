@@ -1,59 +1,59 @@
 <template>
-    <div style="margin: 50px">
+    <div class="board-container">
         <h2>{{ boardName }}</h2>
         <table>
             <tr>
-                <td class="no-border">1</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">1</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">2</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">2</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">3</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">3</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">4</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">4</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">5</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">5</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">6</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">6</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">7</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">7</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">8</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">8</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">9</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">9</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border">10</td>
-                <td v-for="n in 10" :key="n"></td>
+                <td class="board-table_no-border">10</td>
+                <td class="board-table_td" v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
-                <td class="no-border"></td>
-                <td class="no-border">A</td>
-                <td class="no-border">B</td>
-                <td class="no-border">C</td>
-                <td class="no-border">D</td>
-                <td class="no-border">E</td>
-                <td class="no-border">F</td>
-                <td class="no-border">G</td>
-                <td class="no-border">H</td>
-                <td class="no-border">I</td>
-                <td class="no-border">J</td>
+                <td class="board-table_no-border"></td>
+                <td class="board-table_no-border">A</td>
+                <td class="board-table_no-border">B</td>
+                <td class="board-table_no-border">C</td>
+                <td class="board-table_no-border">D</td>
+                <td class="board-table_no-border">E</td>
+                <td class="board-table_no-border">F</td>
+                <td class="board-table_no-border">G</td>
+                <td class="board-table_no-border">H</td>
+                <td class="board-table_no-border">I</td>
+                <td class="board-table_no-border">J</td>
             </tr>
         </table>
     </div>
@@ -73,22 +73,3 @@ export default defineComponent({
     },
 })
 </script>
-<style>
-table,
-th,
-td {
-    border: solid black;
-    border-width: 1px;
-}
-td {
-    width: 40px;
-    height: 40px;
-}
-h2 {
-    text-align: left;
-    margin-left: 10%;
-}
-.no-border {
-    border: 0px;
-}
-</style>
