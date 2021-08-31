@@ -4,133 +4,43 @@
         <table>
             <tr>
                 <td class="no-border">1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">6</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">7</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">8</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">9</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border">10</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td v-for="n in 10" :key="n"></td>
             </tr>
             <tr>
                 <td class="no-border"></td>
@@ -171,8 +81,8 @@ td {
     border-width: 1px;
 }
 td {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 h2 {
     text-align: left;
