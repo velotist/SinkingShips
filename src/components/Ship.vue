@@ -1,11 +1,13 @@
 <template>
     <div>
-        <div style="margin: 10px; display: inline-flex">
-            <img :src="imageSource" alt="Ship" />
-        </div>
-        <div>
-            <p>{{ name }}</p>
-            <p>{{ size }} Kreuze</p>
+        <div class="ship-container">
+            <div class="image-container">
+                <img :src="imageSource" alt="Ship" />
+            </div>
+            <div>
+                <span>{{ name }}</span>
+                <p>{{ size }} Crosses</p>
+            </div>
         </div>
     </div>
 </template>
