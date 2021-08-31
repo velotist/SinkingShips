@@ -1,59 +1,27 @@
 <template>
-    <div class="board-container">
+    <div class="board-container_margin">
         <h2>{{ boardName }}</h2>
         <table>
-            <tr>
-                <td class="board-table_no-border">1</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">2</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">3</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">4</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">5</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">6</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">7</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">8</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">9</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
-            </tr>
-            <tr>
-                <td class="board-table_no-border">10</td>
-                <td class="board-table_td" v-for="n in 10" :key="n"></td>
+            <tr v-for="number in 10" :key="number">
+                <td class="board-table_td-number">
+                    {{ number }}
+                </td>
+                <td
+                    v-for="n in letters.length"
+                    :key="n"
+                    v-bind:id="`${letters[n - 1]}.${number}`"
+                    class="board-table_td"
+                ></td>
             </tr>
             <tr>
                 <td class="board-table_no-border"></td>
-                <td class="board-table_no-border">A</td>
-                <td class="board-table_no-border">B</td>
-                <td class="board-table_no-border">C</td>
-                <td class="board-table_no-border">D</td>
-                <td class="board-table_no-border">E</td>
-                <td class="board-table_no-border">F</td>
-                <td class="board-table_no-border">G</td>
-                <td class="board-table_no-border">H</td>
-                <td class="board-table_no-border">I</td>
-                <td class="board-table_no-border">J</td>
+                <td
+                    class="board-table_no-border"
+                    v-for="letter in letters"
+                    :key="letter"
+                >
+                    {{ letter }}
+                </td>
             </tr>
         </table>
     </div>
@@ -70,6 +38,11 @@ export default defineComponent({
             type: Boolean,
             default: true,
         },
+    },
+    data() {
+        return {
+            letters: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'],
+        }
     },
 })
 </script>
