@@ -2,14 +2,15 @@
     <div class="board-container">
         <h2>{{ boardName }}</h2>
         <table>
-            <tr v-for="n in letters.length" :key="n">
-                <td class="board-table_no-border">
-                    {{ n }}
+            <tr v-for="number in 10" :key="number">
+                <td>
+                    {{ number }}
                 </td>
                 <td
-                    class="board-table_td"
                     v-for="n in letters.length"
                     :key="n"
+                    v-bind:id="`${letters[n - 1]}.${number}`"
+                    class="board-table_td"
                 ></td>
             </tr>
             <tr>
