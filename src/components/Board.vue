@@ -1,7 +1,7 @@
 <template>
     <div class="board-container_margin">
         <h2>{{ boardName }}</h2>
-        <table>
+        <table class="table">
             <tr v-for="number in 10" :key="number">
                 <td class="board-table_td-number">
                     {{ number }}
